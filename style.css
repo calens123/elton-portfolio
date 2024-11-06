@@ -1,0 +1,87 @@
+/* Setting size/boundaries of the body text/images */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f9;
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+/* Header Styling */
+header {
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+h1 {
+  font-size: 2.5em;
+  color: #333;
+}
+
+/* Project Box Styling */
+.project-box {
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin-bottom: 20px;
+  max-width: 800px;
+  width: 100%;
+}
+
+/* Text Styling for headers/project text */
+.project-text {
+  flex: 1;
+  background-color: #e6f7ff;
+  padding: 20px;
+  border-radius: 8px;
+  margin-right: 20px;
+}
+
+.project-text h2 {
+  font-size: 1.5em;
+  color: #005b99;
+  margin-bottom: 10px;
+}
+
+.project-text p {
+  line-height: 1.6;
+  color: #333;
+}
+
+/* Image formatting */
+.project-image {
+  width: 200px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 8px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* (had to google this) Formatting so page fits when scaled differently */
+@media (max-width: 768px) {
+  .project-box {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .project-text {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+
+  .project-image {
+    width: 100%;
+    height: auto;
+  }
+}
